@@ -15,7 +15,8 @@ ln -s material/canvas .
 
 # fix lwt
 echo ""
-echo 'renaming duplicate .so of lwt...'
+echo 'renaming duplicate lwt...'
 set -v # verbose
+sudo mv /usr/local/lib/ocaml/3.12.1/lwt /usr/local/lib/ocaml/lwt-3.12.1.bak
 sudo mv /usr/local/lib/ocaml/3.12.1/stublibs/dlllwt-unix.so /usr/local/lib/ocaml/3.12.1/stublibs/dlllwt-unix.so.bak
 
